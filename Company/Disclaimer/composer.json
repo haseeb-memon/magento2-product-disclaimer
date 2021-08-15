@@ -1,0 +1,22 @@
+{
+    "name": "company/module-disclaimer",
+    "description": "A custom section in the product detail view page under product short description, with a message from system configuration. message field for system configuration. Admin will be able to save and update message in configuration and once enabled and saved it will be shown on all product detail pages only.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Haseeb Memon",
+            "email": "memon.haseeb@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Company\\Disclaimer\\": ""
+        }
+    }
+}

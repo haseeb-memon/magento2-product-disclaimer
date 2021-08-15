@@ -1,0 +1,6 @@
+
+type StoreConfig {
+    
+    disclaimer_general_is_enabled  : String  @doc(description: "Query by disclaimer_general_is_enabled.") 
+    disclaimer_general_content  : String  @doc(description: "Query by disclaimer_general_content.") 
+}

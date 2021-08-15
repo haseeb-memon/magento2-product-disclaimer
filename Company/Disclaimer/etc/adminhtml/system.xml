@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="company" translate="label" sortOrder="999">
+			<label>Company Name</label>
+		</tab>
+		<section id="disclaimer" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Product Disclaimer</label>
+			<tab>company</tab>
+			<resource>Company_Disclaimer::config_company_disclaimer</resource>
+			<group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>General</label>
+				<field id="is_enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="content" type="editor" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Content</label>
+					<comment/>
+					<frontend_model>Company\Disclaimer\Block\Adminhtml\System\Config\Editor</frontend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
